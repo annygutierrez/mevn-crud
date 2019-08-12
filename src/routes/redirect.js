@@ -6,7 +6,8 @@ var http = require('http');
 var fs = require('fs');
 
 router.get('/:id', (req, res) => {
-    res.json({ id: req.params.id });
+    // res.json({ id: req.params.id });
+    res.redirect(req.params.id);
 });
 
 // ruta que obtiene los datos almacenados en el esquema Usuario
