@@ -5,8 +5,8 @@ const router = express.Router();
 var http = require('http');
 var fs = require('fs');
 
-router.get('/?url', (req, res) => {
-    res.json(req.url);
+router.get('/', (req, res) => {
+    res.json({ data: 'hello' });
 });
 
 // ruta que obtiene los datos almacenados en el esquema Usuario
