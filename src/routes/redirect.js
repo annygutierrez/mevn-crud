@@ -6,12 +6,12 @@ var http = require('http');
 var fs = require('fs');
 
 router.get('/:url', (req, res) => {
-    res.json({ url: req.params.url });
+    // res.json({ url: req.params.url });
     // res.redirect(req.params.id);
-    response.writeHead(302, {
+    res.writeHead(302, {
         'Location': req.params.url
       });
-      response.end();
+      res.end();
 });
 
 // ruta que obtiene los datos almacenados en el esquema Usuario
