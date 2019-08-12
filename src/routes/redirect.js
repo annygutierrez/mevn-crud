@@ -7,8 +7,8 @@ var fs = require('fs');
 
 router.get('/:url', (req, res) => {
     // res.json({ url: req.params.url });
-    res.redirect(req.params.url);
-    res.end();
+    let urlParam = encodeURIComponent(req.params.url);
+    res.redirect(urlParam);
 });
 
 // ruta que obtiene los datos almacenados en el esquema Usuario
