@@ -12,6 +12,7 @@ const { DB } = require('./config/DB');
 
 //Ruta del usuario
 const usuarioRoutes = require('./routes/usuario');
+const redirectRoutes = require('./routes/redirect');
 
 const mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
@@ -28,6 +29,7 @@ app.use(bodyParser.json());
 
 // routes
 app.use('/user', usuarioRoutes);
+app.use('/redirect', redirectRoutes);
 
 
 // ruta para los archivos staticos
