@@ -8,11 +8,10 @@ var fs = require('fs');
 router.get('/:url', (req, res) => {
     res.json({ url: req.params.url });
     // res.redirect(req.params.id);
-    // response.writeHead(302, {
-    //     'Location': req.params.id
-        //add other headers here...
-    //   });
-    //   response.end();
+    response.writeHead(302, {
+        'Location': req.params.url
+      });
+      response.end();
 });
 
 // ruta que obtiene los datos almacenados en el esquema Usuario
