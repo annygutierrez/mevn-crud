@@ -5,14 +5,14 @@ const router = express.Router();
 var http = require('http');
 var fs = require('fs');
 
-router.get('/:id', (req, res) => {
-    // res.json({ id: req.params.id });
+router.get('/:url', (req, res) => {
+    res.json({ url: req.params.url });
     // res.redirect(req.params.id);
-    response.writeHead(302, {
-        'Location': req.params.id
+    // response.writeHead(302, {
+    //     'Location': req.params.id
         //add other headers here...
-      });
-      response.end();
+    //   });
+    //   response.end();
 });
 
 // ruta que obtiene los datos almacenados en el esquema Usuario
