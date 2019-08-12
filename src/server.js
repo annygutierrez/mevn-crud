@@ -33,7 +33,7 @@ app.use('/redirect', redirectRoutes);
 
 
 // ruta para los archivos staticos
-app.use(express.static(path.join(__dirname, 'public', { redirect : false })));
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.listen(app.get('port'), () => {
     console.log('Server on port', app.get('port'));
