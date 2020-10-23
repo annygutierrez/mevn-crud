@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 
+
 /**
  * Se crea el esquema del modelo Usuario con sus propiedades 
  */

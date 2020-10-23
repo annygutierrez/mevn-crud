@@ -14,6 +14,7 @@ const { DB } = require('./config/DB');
 const usuarioRoutes = require('./routes/usuario');
 const redirectRoutes = require('./routes/redirect');
 const magnaRoutes = require('./routes/magna');
+const procedureListRoutes = require('./routes/procedures-list');
 
 const mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
@@ -32,6 +33,7 @@ app.use(bodyParser.json());
 app.use('/user', usuarioRoutes);
 app.use('/procedure', magnaRoutes);
 app.use('/redirect', redirectRoutes);
+app.use('/procedure-list', procedureListRoutes);
 
 
 // ruta para los archivos staticos
