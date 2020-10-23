@@ -26,7 +26,7 @@
     "cors": "^2.8.4",
     "express": "^4.16.3",
     "moment": "^2.22.1",
-    "mongoose": "^5.0.16",
+    "mongoose": "^5.7.5",
     "morgan": "^1.9.0",
     "vue2-datepicker": "^1.9.6"
   },
