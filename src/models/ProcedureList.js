@@ -47,7 +47,7 @@ const ProcedureList = new Schema({
     description: { type: String, required: false },
     typeRequests: [
         {
-            idTypeRequest: { type: Number, required: false },
+            idTypeRequest: { type: String, required: false },
             name: { type: String, required: false },
             description: { type: String, required: false },
             abreviature: { type: String, required: false },
