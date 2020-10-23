@@ -41,8 +41,7 @@ const Schema = mongoose.Schema;
 /**
  * Se crea el esquema del modelo Usuario con sus propiedades 
  */
-const ProcedureList = new Schema([
-  {
+const ProcedureList = new Schema({
     idCategory: { type: Number, required: false },
     name: { type: String, required: false },
     description: { type: String, required: false },
@@ -54,8 +53,7 @@ const ProcedureList = new Schema([
             abreviature: { type: String, required: false },
         }
     ]
-  }
-],{
+  },{
     collection: 'procedureList'
 });
 
