@@ -31,7 +31,7 @@
     "vue2-datepicker": "^1.9.6"
   },
   "devDependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.4",
     "css-loader": "^0.28.11",
